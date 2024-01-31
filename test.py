@@ -46,11 +46,11 @@ class TestCplxMethods(unittest.TestCase):
     
     def test_modulo(self):
         mod = cplx.modulo((5.6,-8))
-        self.assertAlmostEqual(mod,9.76, places = 0)
+        self.assertAlmostEqual(mod,9.76, places = 1)
         
     def test_modulo2(self):
         mod = cplx.modulo((2.3,6.5))
-        self.assertAlmostEqual(mod,6.89, places = 0)
+        self.assertAlmostEqual(mod,6.89, places = 1)
         
     def test_conjugado(self):
         conj1 = cplx.conjugado((5.6, -8))
