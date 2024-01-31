@@ -30,7 +30,7 @@ class TestCplxOperations(unittest.TestCase):
         self.assertAlmostEqual(res2,-3.2)
 
     def test2_resta(self):
-        res1,res2 = cplx.restacplx((5,1),(7,10.2))
+        res1,res2 = cplx.resta((5,1),(7,10.2))
         self.assertAlmostEqual(res1,-2)
         self.assertAlmostEqual(res2,-9.2)
 
