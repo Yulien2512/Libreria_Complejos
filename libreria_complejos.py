@@ -17,7 +17,7 @@ def producto(a, b):
 def resta(a, b):
 
     pr = a[0] - b[0]
-    pi = a[1] - a[1]
+    pi = a[1] - b[1]
 
     return (pr, pi)
 
@@ -34,11 +34,13 @@ def modulo(a):
     return num
 
 def conjugado(c):
+    a = c[0]
+    b = -c[1]
 
-    return (c[0], -c[1])
+    return (a, b)
 
 def polar(c):
-    r = ((c[0]**2 + c[1]**2)**2)
+    r = ((c[0]**2 + c[1]**2)**0.5)
     ang = math.degrees(math.atan2(c[1], c[0]))
 
     return (r, ang)
@@ -58,17 +60,17 @@ def fase(c):
     pi = c[1]
 
     res = math.degrees(math.atan2(pi , pr))
-    return fase
+    return res
 
 
 if __name__ == '__main__':
           
-    print(suma((5.6,-8), (3.4, 5.2)))
-    print(producto((5.6,-8), (3.4, 5.2)))
-    print(resta((5.6,-8), (3.4, 5.2)))
-    print(division((5.6,-8), (3.4, 5.2)))
-    print(modulo((3.4, 5.2)))
-    print(conjugado((5.6,-8), (3.4, 5.2)))
-    print(polar((3.4, 5.2)))
-    print(cartesiano((3.4, 5.2)))
-    print(fase((3.4, 5.2)))
+    print(suma((2.3,6.5), (1.4, -5.2)))
+    print(producto((2.3,6.5), (1.4, -5.2)))
+    print(resta((2.3,6.5), (1.4, -5.2)))
+    print(division((2.3,6.5), (1.4, -5.2)))
+    print(modulo((2.3,6.5)))
+    print(conjugado((2.3,6.5)))
+    print(polar((2.3,6.5)))
+    print(cartesiano((2.3,6.5)))
+    print(fase((2.3,6.5)))
