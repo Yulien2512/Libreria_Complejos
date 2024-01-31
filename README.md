@@ -13,7 +13,7 @@ Libreria que contiene las implementaciones de diferentes operaciones con numeros
 
 
 
-## Representacion
+## Ejemplo
 
 Basicamente , se debe separar la parte real de la imaginaria del numero, de esta manera se operan para 
 realizar las funciones que se desean.
